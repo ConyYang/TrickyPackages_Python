@@ -93,4 +93,20 @@ random.choice().
 ### 6. Turtle
 Draw some basic shapes using turle package.
 
-
+### 7. Fuzzy Wuzzy
+This package use Levenshtein Distance to calculate the similarity of words. It is very powerful in 
+text analyze. 
+We use this command to install this package. 
+``` console
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple FuzzyWuzzy
+``` 
+We us 4 basic methods of this module: Ratio, Partial Ratio, 
+Token Sort Ratio, Token Set Ratio
+```console
+Simple Ratio:  52
+Partial Ratio:  57
+Token Sort Ratio:  82
+Token Set Ratio:  82
+```
+But ratio() functions can only give us numbers. If we need get the max correlated text, need to select
+different function for data type and then extract the result. So now we have process module.
