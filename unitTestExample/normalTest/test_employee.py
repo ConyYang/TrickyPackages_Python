@@ -1,6 +1,6 @@
 import unittest
-from employee import Employee
-from unittest.mock import patch
+from normalTest.employee import Employee
+
 
 class TestEmployee(unittest.TestCase):
 
